@@ -107,7 +107,7 @@ require_once('dbconfig/config.php');
 
 
         if ($password == $confirmation_password) {
-            echo "<script type='text/javascript'>alert('Sabaash !')</script>";
+            // echo "<script type='text/javascript'>alert('Sabaash !')</script>";
             // 
             $query = "insert into customers values('$email_id','$name','$preference','$username','$password')";
             $query_run = mysqli_query($con, $query);
