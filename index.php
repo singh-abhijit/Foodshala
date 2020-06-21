@@ -1,7 +1,7 @@
-<?php
+<!-- <?php
 session_start();
 require_once('dbconfig/config.php');
-?>
+?> -->
 <!DOCTYPE html>
 <html>
 
@@ -50,7 +50,9 @@ require_once('dbconfig/config.php');
         </nav>
     </header>
 
-    <h1>Home page, name : <?php echo $_SESSION['name']; ?>..</h1>
+    <h1>Home page, name : 
+    <!-- <?php echo $_SESSION['name']; ?> -->
+    ..</h1>
 
 
     <footer></footer>
