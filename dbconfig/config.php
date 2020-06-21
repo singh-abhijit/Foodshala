@@ -1,4 +1,4 @@
 <?php
-    $con = mysqli_connect("localhost", "root", "") or die('I cannot connect to the database because: ');
+    $con = mysqli_connect("localhost", "root", "") or die('Can\'t establish a database connection');
     mysqli_select_db($con, 'foodshaladb');
 ?>
