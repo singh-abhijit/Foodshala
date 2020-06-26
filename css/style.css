@@ -222,4 +222,8 @@ html, body {
 .index_title{
     text-align: center;
     margin-top: 20%;
+    margin-bottom: 20%;
+}
+.menu_body{
+    min-height: 568px !important;
 }

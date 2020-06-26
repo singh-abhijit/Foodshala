@@ -65,16 +65,16 @@ require_once('dbconfig/config.php');
 
 
             <div class="index_title">
-                <h1 class="heading">Food Shala</h1>
-                <h2 class="text-white">Feeling Hungry ? Order food from Foodshala.</h2>
+                <h1 class="">Food Shala</h1>
+                <h2 class="">Feeling Hungry ? Order food from Foodshala.</h2>
                 <hr class="line">
-                <a href="views/viewMenu.php" class="btn btn-success btn-lg">Order Now</a>
+                <a href="menu.php" class="btn btn-success btn-lg">Order Now</a>
             </div>
 
 
         </div>
 
-        <div class="site-footer-container">
+        <!-- <div class="site-footer-container"> -->
             <footer class="site-footer">
                 <div class="container">
                     <div class="row">
@@ -123,7 +123,7 @@ require_once('dbconfig/config.php');
                     </div>
                 </div>
             </footer>
-        </div>
+        <!-- </div> -->
 
     </div>
     <!--Extras  -->
@@ -133,7 +133,7 @@ require_once('dbconfig/config.php');
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Developer</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -145,7 +145,6 @@ require_once('dbconfig/config.php');
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
                     </div>
                 </div>
             </div>

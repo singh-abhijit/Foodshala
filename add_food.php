@@ -94,54 +94,54 @@ require_once('dbconfig/config.php');
         </div>
         <!--  -->
         <!-- <div class="site-footer-container"> -->
-            <footer class="site-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6 col-md-4">
-                            <h6>For Restaurants</h6>
-                            <ul class="footer-links">
-                                <li><a href="">Dashboard</a></li>
-                                <li><a href="add_food.php">Add Menu</a></li>
-                                <li><a href="restaurant_registration.php">Add Restaurant</a></li>
-                                <li><a href="#">Inquire</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="col-xs-6 col-md-4">
-                            <h6>For Foodies</h6>
-                            <ul class="footer-links">
-                                <li><a href="">Become a PR</a></li>
-                                <li><a href="">Blogging</a></li>
-                                <li><a href="">Community</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="col-xs-6 col-md-4">
-                            <h6>About</h6>
-                            <ul class="footer-links">
-                                <li><a href="#" data-toggle="modal" data-target="#exampleModal">Developer</a></li>
-                            </ul>
-                        </div>
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <h6>For Restaurants</h6>
+                        <ul class="footer-links">
+                            <li><a href="">Dashboard</a></li>
+                            <li><a href="add_food.php">Add Menu</a></li>
+                            <li><a href="restaurant_registration.php">Add Restaurant</a></li>
+                            <li><a href="#">Inquire</a></li>
+                        </ul>
                     </div>
-                    <hr>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-sm-6 col-xs-12">
-                            <p class="copyright-text">
-                                <!-- Copyright &copy;  -->
-                                Developed by Abhijit Singh
-                            </p>
-                        </div>
 
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <ul class="social-icons">
-                                <li><a class="linkedin" href="https://www.linkedin.com/in/singh-abhijit/"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
+                    <div class="col-xs-6 col-md-4">
+                        <h6>For Foodies</h6>
+                        <ul class="footer-links">
+                            <li><a href="">Become a PR</a></li>
+                            <li><a href="">Blogging</a></li>
+                            <li><a href="">Community</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-6 col-md-4">
+                        <h6>About</h6>
+                        <ul class="footer-links">
+                            <li><a href="#" data-toggle="modal" data-target="#exampleModal">Developer</a></li>
+                        </ul>
                     </div>
                 </div>
-            </footer>
+                <hr>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-6 col-xs-12">
+                        <p class="copyright-text">
+                            <!-- Copyright &copy;  -->
+                            Developed by Abhijit Singh
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <ul class="social-icons">
+                            <li><a class="linkedin" href="https://www.linkedin.com/in/singh-abhijit/"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <!-- </div> -->
     </div>
 
@@ -180,6 +180,29 @@ require_once('dbconfig/config.php');
     } else {
     }
     ?>
+    <div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Developer</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Name : Abhijit Singh <br>
+                        Mobile : +91-8233185160 <br>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
