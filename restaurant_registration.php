@@ -34,9 +34,6 @@ require_once('dbconfig/config.php');
                     <li class="nav-item ">
                         <a class="nav-link" href="login.php">Sign in</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="registration.php">Sign Up</a>
-                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="false" aria-expanded="true">
                             <img src="./images/avatar2.webp" alt="User" class="user_avatar">
@@ -57,20 +54,20 @@ require_once('dbconfig/config.php');
     </header>
 
     <div class="body_and_footer_container">
-        <div class="body_main" >
-            <h5 style="margin: auto; text-align: center; margin-top: 2%"><label>Create your account</label></h5>
+        <div class="body_main">
+            <h5 style="margin: auto; text-align: center; margin-top: 2%"><label>Register your restaurant</label></h5>
             <div class="card" style="width : 25%; margin : auto; margin-bottom: 2%">
                 <div class="card-body">
-                    <form action="registration.php" method="post">
+                    <form action="restaurant_registration.php" method="post">
                         <div class="form-group">
-                            <label for="inputName">Name</label>
-                            <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp" name='name' required>
+                            <label for="inputName">Restaurant Name</label>
+                            <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp" name='restaurant_name' required>
                             <!-- <small id="nameHelp" class="form-text text-muted">Name should not contain any special characters.</small> -->
                         </div>
                         <div class="form-group">
-                            <label for="inputEmail">Email address</label>
-                            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" name='email_id' required>
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            <label for="inputDetails">Details</label>
+                            <input type="text" class="form-control" id="inputDetails" aria-describedby="detailsHelp" name='restaurant_details' required>
+                            <small id="detailsHelp" class="form-text text-muted">Please share some details about your restaurant.</small>
                         </div>
                         <div class="form-group">
                             <label for="inputUsername">Username</label>
@@ -94,89 +91,95 @@ require_once('dbconfig/config.php');
                             <label for="inputConfirmPassword">Confirm password</label>
                             <input type="password" class="form-control" id="inputConfirmPassword" name='confirmation_password' required>
                         </div>
-                        <button type="submit" class="btn btn-primary" name="register">Sign Up</button>
+                        <button type="submit" class="btn btn-primary" name="register_restaurant">Register</button>
                     </form>
                 </div>
             </div>
         </div>
-<!--  -->
-            <footer class="site-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6 col-md-4">
-                            <h6>For Restaurants</h6>
-                            <ul class="footer-links">
-                                <li><a href="">Dashboard</a></li>
-                                <li><a href="add_food.php">Add Menu</a></li>
-                                <li><a href="restaurant_registration.php">Add Restaurant</a></li>
-                                <li><a href="#">Inquire</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="col-xs-6 col-md-4">
-                            <h6>For Foodies</h6>
-                            <ul class="footer-links">
-                                <li><a href="">Become a PR</a></li>
-                                <li><a href="">Blogging</a></li>
-                                <li><a href="">Community</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="col-xs-6 col-md-4">
-                            <h6>About</h6>
-                            <ul class="footer-links">
-                                <li><a href="">Developer</a></li>
-                            </ul>
-                        </div>
+        <!--  -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <h6>For Restaurants</h6>
+                        <ul class="footer-links">
+                            <li><a href="restaurant_registration.php">Add Restaurant</a></li>
+                            <li><a href="#">Inquire</a></li>
+                        </ul>
                     </div>
-                    <hr>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-sm-6 col-xs-12">
-                            <p class="copyright-text">
-                                <!-- Copyright &copy;  -->
-                                Developed by Abhijit Singh
-                            </p>
-                        </div>
 
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <ul class="social-icons">
-                                <li><a class="linkedin" href="https://www.linkedin.com/in/singh-abhijit/"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
+                    <div class="col-xs-6 col-md-4">
+                        <h6>For Foodies</h6>
+                        <ul class="footer-links">
+                            <li><a href="">Become a PR</a></li>
+                            <li><a href="">Blogging</a></li>
+                            <li><a href="">Community</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-6 col-md-4">
+                        <h6>About</h6>
+                        <ul class="footer-links">
+                            <li><a href="">Developer</a></li>
+                        </ul>
                     </div>
                 </div>
-            </footer>
+                <hr>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-6 col-xs-12">
+                        <p class="copyright-text">
+                            <!-- Copyright &copy;  -->
+                            Developed by Abhijit Singh
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <ul class="social-icons">
+                            <li><a class="linkedin" href="https://www.linkedin.com/in/singh-abhijit/"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 
 
     <?php
-    if (isset($_POST['register'])) {
-        @$name = $_POST['name'];
-        @$email_id = $_POST['email_id'];
-        @$username = $_POST['username'];
-        @$preference = $_POST['preference'];
-        @$password = $_POST['password'];
-        @$confirmation_password = $_POST['confirmation_password'];
+    if (isset($_POST['register_restaurant'])) {
+        echo '<script type="text/javascript">alert("Inside 1st loop")</script>';
+        @$restaurant_name = $_POST['restaurant_name'];
+        @$restaurant_details = $_POST['restaurant_details'];
+        @$restaurant_username = $_POST['username'];
+        @$restaurant_preference = $_POST['preference'];
+        @$restaurant_password = $_POST['password'];
+        @$restaurant_confirmation_password = $_POST['confirmation_password'];
 
 
-        if ($password == $confirmation_password) {
+        if ($restaurant_password == $restaurant_confirmation_password) {
             // echo "<script type='text/javascript'>alert('Sabaash !')</script>";
             // 
-            $query = "insert into customers values('$email_id','$name','$preference','$username','$password')";
+            $query = "insert into restaurants values('$restaurant_name','$restaurant_details','$restaurant_preference','$restaurant_username','$restaurant_password')";
             $query_run = mysqli_query($con, $query);
             if ($query_run) {
-                echo '<script type="text/javascript">alert("User Registered.. Welcome")</script>';
-                $_SESSION['username'] = $username;
-                $_SESSION['name'] = $name;
+                echo '<script type="text/javascript">alert("Restaurant Registered.. Welcome")</script>';
+                $_SESSION['restaurant_username'] = $username;
+                $_SESSION['restaurant_name'] = $restaurant_name;
+                // $_SESSION['type'] = 'restaurant';
+
 
                 header("Location: login.php");
+            }
+            else{
+                echo '<script type="text/javascript">alert("Query could not be run ")</script>';
             }
             // 
         } else {
             echo '<script type="text/javascript">alert("Password and Confirm Password do not match. \nPease Try again")</script>';
         }
+    }
+    else{
     }
     ?>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

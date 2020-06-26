@@ -29,10 +29,10 @@ require_once('dbconfig/config.php');
 
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav justify-content-end">
-                    <li class="nav-item active">
+                    <li class="nav-item ">
                         <a class="nav-link " href="index.php">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="menu.php">Order Food</a>
                     </li>
                     <li class="nav-item">
@@ -61,18 +61,10 @@ require_once('dbconfig/config.php');
     </header>
 
     <div class="body_and_footer_container" style="min-height: 100%" id='index-body_main_container'>
-        <div class="body_main align-middle" id='index-body_main'>
-
-
-            <div class="index_title">
-                <h1 class="heading">Food Shala</h1>
-                <h2 class="text-white">Feeling Hungry ? Order food from Foodshala.</h2>
-                <hr class="line">
-                <a href="views/viewMenu.php" class="btn btn-success btn-lg">Order Now</a>
-            </div>
-
+        <div class="body_main" id='index-body_main'>
 
         </div>
+
 
         <div class="site-footer-container">
             <footer class="site-footer">
@@ -100,7 +92,7 @@ require_once('dbconfig/config.php');
                         <div class="col-xs-6 col-md-4">
                             <h6>About</h6>
                             <ul class="footer-links">
-                                <li><a href="#" data-toggle="modal" data-target="#exampleModal">Developer</a></li>
+                                <li><a href="">Developer</a></li>
                             </ul>
                         </div>
                     </div>
@@ -123,32 +115,6 @@ require_once('dbconfig/config.php');
                     </div>
                 </div>
             </footer>
-        </div>
-
-    </div>
-    <!--Extras  -->
-    <div>
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        Name : Abhijit Singh <br>
-                        Mobile : +91-8233185160 <br>
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
