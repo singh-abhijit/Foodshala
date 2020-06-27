@@ -198,6 +198,7 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-position-x: 56%;
 
 }
 #login-body{
@@ -234,5 +235,5 @@ html, body {
 }
 .btn_order_now{
   max-width: 160px;
-  min-width: ;
+  /* min-width: ; */
 }
