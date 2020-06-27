@@ -60,14 +60,25 @@ require_once('dbconfig/config.php');
         </nav>
     </header>
 
-    <div style="min-height: 100%" id='index-body_main_container'>
-        
-            <div class="index_title">
-                <h1 class="" style="color : white">Food Shala</h1>
-                <h2 class="" style="color : seashell">Feeling Hungry ? Order food from Foodshala.</h2>
-                <!-- <hr class="line">
-                <a href="menu.php" class="btn_order_now">Order Now</a> -->
+    <div style="min-height: 100%" id='index-body_main_container' class="img-fluid">
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col-7">
+
+                </div>
+                <div class="col-sm">
+
+                </div>
             </div>
+        </div> -->
+
+        <div class="index_title">
+            <h1 class="" style="color : white">Food Shala</h1>
+            <h2 class="" style="color : seashell">Feeling Hungry ?</h2>
+            <h2 class="" style="color : seashell">Order food from Foodshala.</h2>
+            <button type="button" class="btn btn-light btn_order_now">Order Now</button>
+
+        </div>
 
         <!-- <div class="site-footer-container"> -->
 

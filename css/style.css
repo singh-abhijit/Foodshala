@@ -197,6 +197,7 @@ html, body {
     background-image: url("../images/food-on-table-326278.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 
 }
 #login-body{
@@ -222,6 +223,7 @@ html, body {
     text-align: left;
     margin-top: 20%;
     margin-bottom: 20%;
+    margin-left: 14%;
 
 }
 .menu_body{
@@ -231,5 +233,6 @@ html, body {
   color: white
 }
 .btn_order_now{
-  background-color: ;
+  max-width: 160px;
+  min-width: ;
 }
