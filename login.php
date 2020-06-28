@@ -106,56 +106,12 @@ require_once('dbconfig/config.php');
             }
             ?>
         </div>
-            <footer class="site-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6 col-md-4">
-                            <h6>For Restaurants</h6>
-                            <ul class="footer-links">
-                                <li><a href="">Dashboard</a></li>
-                                <li><a href="add_food.php">Add Menu</a></li>
-                                <li><a href="restaurant_registration.php">Add Restaurant</a></li>
-                                <li><a href="#">Inquire</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="col-xs-6 col-md-4">
-                            <h6>For Foodies</h6>
-                            <ul class="footer-links">
-                                <li><a href="">Become a PR</a></li>
-                                <li><a href="">Blogging</a></li>
-                                <li><a href="">Community</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="col-xs-6 col-md-4">
-                            <h6>About</h6>
-                            <ul class="footer-links">
-                                <li><a href="">Developer</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <hr>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-sm-6 col-xs-12">
-                            <p class="copyright-text">
-                                <!-- Copyright &copy;  -->
-                                Developed by Abhijit Singh
-                            </p>
-                        </div>
-
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <ul class="social-icons">
-                                <li><a class="linkedin" href="https://www.linkedin.com/in/singh-abhijit/"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </footer>
     </div>
-    
+    <?php
+    require_once('./components/footer.php');
+    require_once('./components/extras.php');
+    ?>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
