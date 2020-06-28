@@ -41,6 +41,9 @@ require_once('dbconfig/config.php');
                     <li class="nav-item">
                         <a class="nav-link" href="registration.php">Sign Up</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.php">My Cart</a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="false" aria-expanded="true">
                             <img src="./images/avatar2.webp" alt="User" class="user_avatar">

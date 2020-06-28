@@ -76,33 +76,8 @@ require_once('dbconfig/config.php');
                         if ($num > 0) {
                             while ($product = mysqli_fetch_array($query_run)) {
                     ?>
-
-                                <div class="col-lg-3 col-md-3 col-sm-12 col-xl-4 mb-5">
-
-                                    <form>
-                                        <div class="card">
-                                            <!-- <div class="card" style="width: 18rem;"> -->
-                                            <img class="card-img-top" src="<?php echo $product['imglink'] ? $product['imglink'] : './images/common_food_image.jpg';  ?>" alt="food image">
-                                            <div class="card-body">
-                                                <h5 class="card-title text-center"><?php echo $product['food_name'];  ?> </h5>
-                                                <p class="card-text text-center"><?php echo $product['food_details'];  ?></p>
-                                                <p class="card-text br-1 text-center">Qantity : <?php echo $product['food_quantity'];  ?></p>
-                                            </div>
-
-
-                                            <h6 class="text-center"> &#8377; <?php echo $product['food_price'];  ?></h6>
-
-                                            <!-- <h6 class="badge badge-success"> 4.4 <i class="fa fa-star"> </i> </h6>
-                                            <input type="text" name="" class="form-control" placeholder="Quantity"> -->
-
-                                            <div class="btn-group d-flex text-center">
-                                                <button class="btn flex-fill m-auto" style="background-color: darkgrey;" onclick=""> Add to cart </button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
+                                <?php include('./components/menu_item_card.php') ?>
                                 <br />
-
                     <?php
                             }
                         }
@@ -143,6 +118,15 @@ require_once('dbconfig/config.php');
             }
         }
         ?>
+
+        <script>
+            function myFunction(id) {
+                //  document.getElementById("demo").innerHTML = "Welcome " + name + ", the " + job + ".";
+                let a = 23;
+                alert("Product ids : ", a);
+
+            }
+        </script>
 
 
 
