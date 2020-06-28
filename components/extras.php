@@ -12,6 +12,7 @@
                 <div class="modal-body">
                     Name : Abhijit Singh <br>
                     Mobile : +91-8233185160 <br>
+                    Email : itazbhijits@gmail.com <br>
 
                 </div>
                 <div class="modal-footer">

@@ -82,7 +82,7 @@ require_once('dbconfig/config.php');
                                     <form>
                                         <div class="card">
                                             <!-- <div class="card" style="width: 18rem;"> -->
-                                            <img class="card-img-top" src="<?php echo $product['imglink'];  ?>" alt="Card image cap">
+                                            <img class="card-img-top" src="<?php echo $product['imglink'] ? $product['imglink'] : './images/common_food_image.jpg';  ?>" alt="food image">
                                             <div class="card-body">
                                                 <h5 class="card-title text-center"><?php echo $product['food_name'];  ?> </h5>
                                                 <p class="card-text text-center"><?php echo $product['food_details'];  ?></p>
