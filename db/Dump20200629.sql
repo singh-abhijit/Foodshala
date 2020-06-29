@@ -79,7 +79,7 @@ CREATE TABLE `menu` (
 
 LOCK TABLES `menu` WRITE;
 /*!40000 ALTER TABLE `menu` DISABLE KEYS */;
-INSERT INTO `menu` VALUES (1,'Meal','4 Rotis, 1 cup rice, daal, bhindi sabji','both','rest 1','140','4 Rotis, 1 cup rice, daal, bhindi sabji','uploads/meal.jpeg'),(2,'Burger','Burger','both','rest 2','80','1','uploads/burger.webp'),(3,'Sandwich','Grilled Cheese Sandwich','both','rest 2','100','100gms','uploads/sandwich.jpeg'),(4,'Pav Bhaji','It consists of a thick vegetable curry served with a soft bread roll. Its origins are in the state of Maharashtra.','both','rest 1','100','4 bread, 1 plate bhaji','uploads/pav_bhaji.jpeg'),(5,'Chole Bhature ','It is a combination of chana masala and bhatura/Puri, a fried bread made from maida. There is a distinct Punjabi variant of the dish.','both','rest 3','75','2 bhature, 1 plate Chole, onion, pickle and p','uploads/chole_bhature.jpeg'),(7,'Pie','Pie Chart','both','rest 2','100','1','uploads/Screenshot from 2020-05-07 14-07-09.png');
+INSERT INTO `menu` VALUES (1,'Meal','4 Rotis, 1 cup rice, daal, bhindi sabji','both','rest 1','140','4 Rotis, 1 cup rice, daal, bhindi sabji','uploads/meal.jpeg'),(2,'Burger','Burger','both','rest 2','80','1','uploads/burger.webp'),(3,'Sandwich','Grilled Cheese Sandwich','both','rest 2','100','100gms','uploads/sandwich.jpeg'),(4,'Pav Bhaji','It consists of a thick vegetable curry served with a soft bread roll. Its origins are in the state of Maharashtra.','both','rest 1','100','4 bread, 1 plate bhaji','uploads/pav_bhaji.jpeg'),(5,'Chole Bhature ','It is a combination of chana masala and bhatura/Puri, a fried bread made from maida. There is a distinct Punjabi variant of the dish.','both','rest 3','75','2 bhature, 1 plate Chole, onion, pickle and p','uploads/chole_bhature.jpeg'),(7,'Pie','Apple Pie ','both','rest 2','500','1 pie, 1 Kg','uploads/pie.jpg');
 /*!40000 ALTER TABLE `menu` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -120,4 +120,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-06-29 10:58:27
+-- Dump completed on 2020-06-29 21:59:54
