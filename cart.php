@@ -12,23 +12,67 @@ require_once('dbconfig/config.php');
     <div class="body_and_footer_container" style="min-height: 64%">
         <div class="body_main menu_body">
             <form action="cart.php" method="post">
-                cart items here ....
-                <button type="submit" class="btn btn-primary" name="order_food">Order Food </button>
+                <table id="cart" class="table table-hover table-condensed">
+                    <thead>
+                        <tr>
+                            <th style="width:50%">Product</th>
+                            <th style="width:10%">Price</th>
+                            <th style="width:8%">Quantity</th>
+                            <th style="width:22%" class="text-center">Subtotal</th>
+                            <th style="width:10%"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                        $query = " SELECT * FROM menu ";
+                        $query_run = mysqli_query($con, $query);
+                        $total = 0;
+
+                        if ($query_run) {
+                            $num = mysqli_num_rows($query_run);
+
+                            if ($num > 0) {
+                                while ($product = mysqli_fetch_array($query_run)) {
+                                    foreach ($_SESSION['cart_items'] as $item) {
+                                        if ($product["food_id"] == $item) {
+                                            include("./components/cart_item_card.php");
+                                            $total = $total + number_format($product["food_price"], 2);
+                                        }
+                                    }
+                                }
+                            }
+                        } else {
+                            echo '<script type="text/javascript">alert("DB connection error.")</script>';
+                        }
+                        ?>
+                    <tfoot>
+                        <tr>
+                            <td><a href="menu.php" class="btn btn-warning"> < Continue Shopping</a></td>
+                            <td colspan="2" class="hidden-xs"></td>
+                            <td class="hidden-xs text-center"><strong>Total : &#8377; <?php echo $total ?></strong></td>
+                            <td><button type="submit" class="btn btn-success" name="order_food">Checkout >  </button></td>
+                        </tr>
+                    </tfoot>
+
+                    </tbody>
+                </table>
+                
             </form>
 
         </div>
         <?php
         if (isset($_POST['order_food'])) {
-            if ($_SESSION['user_type'] == "customer") {
-                // alert : food ordered
+            if (isset($_SESSION['user_type'])) {
+                // if ($_SESSION['user_type'] == "customer") {
                 echo '<script type="text/javascript">alert("Food ordered")</script>';
                 unset($_SESSION['cart_items']);
+                // } else {
+                //     echo '<script type="text/javascript">alert("Please sign in to the website as a customer,")</script>';
+                // }
             } else {
-                // to log in as a cutomer or sign up if new to this website 
-                // echo '<script type="text/javascript">alert("Please sign in to the website as a customer, or sign up if new to this website")</script>';
-                // header("Location: login.php");
-                echo "Please sign in to the website as a customer, or sign up if new to this website";
+                echo '<script type="text/javascript">alert("Please sign in to the website as a customer, or sing up if you are new to this website")</script>';
             }
+        } else {
         }
         ?>
     </div>

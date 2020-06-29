@@ -39,7 +39,7 @@ if (isset($_SESSION['cart_items'])) {
                             }
                         }
                     } else {
-                        echo '<script type="text/javascript">alert("Getting nothing from DB")</script>';
+                        echo '<script type="text/javascript">alert("DB connection error.")</script>';
                     }
                     ?>
                     <!-- ///////////////////////////////////// -->
