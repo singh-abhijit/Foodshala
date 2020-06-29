@@ -1,7 +1,3 @@
-<?php
-session_start();
-require_once('dbconfig/config.php');
-?>
 <!DOCTYPE html>
 <html id='html_index' style="min-height: 100%">
 
