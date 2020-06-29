@@ -13,7 +13,7 @@ require_once('dbconfig/config.php');
     <div class="body_and_footer_container">
         <div class="body_main">
             <h5 style="margin: auto; text-align: center; margin-top: 2%"><label>Create your account</label></h5>
-            <div class="card" style="width : 25%; margin : auto; margin-bottom: 2%">
+            <div class="card" style="width : 25%; margin : auto; margin-bottom: 2%; min-width : 240px">
                 <div class="card-body">
                     <form action="registration.php" method="post">
                         <div class="form-group">
