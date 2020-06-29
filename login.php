@@ -9,11 +9,13 @@ require_once('dbconfig/config.php');
 
 <body>
     <?php require_once('./components/header.php') ?>
-
-    <div class="body_and_footer_container" id='login-body'>
-        <div class="body_main">
-            <div class="card" id="login_card">
+    <div class="body_and_footer_container my-auto" id='login-body' style="min-height : 62%">
+    <br >
+    <br >
+        <!-- <div class="body_main"> -->
+        <div class="card" style="width : 25%; margin : auto; margin-bottom: 2%; margin-top : 6%; margin-right : 17%; min-width : 240px">
                 <div class="card-body">
+
                     <form action="login.php" method="post">
                         <div class="form-group">
                             <label for="inputUsername">Username</label>
@@ -25,6 +27,8 @@ require_once('dbconfig/config.php');
                         </div>
                         <button type="submit" class="btn btn-primary" name="login">Login</button>
                     </form>
+
+
                 </div>
             </div>
 
@@ -63,7 +67,7 @@ require_once('dbconfig/config.php');
             } else {
             }
             ?>
-        </div>
+        <!-- </div> -->
     </div>
     <?php
     require_once('./components/footer.php');
