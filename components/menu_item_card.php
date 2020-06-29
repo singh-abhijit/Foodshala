@@ -3,7 +3,7 @@
     <form action="menu.php" method="post">
         <div class="card h-100 w-100">
             <!-- <div class="card" style="width: 18rem;"> -->
-            <img class="card-img-top" src="<?php echo $product['imglink'] ? $product['imglink'] : './images/common_food_image.jpg';  ?>" alt="food image">
+            <img class="card-img-top" src="<?php echo $product['imglink'] ? $product['imglink'] : 'images/common_food_image.jpg';  ?>" alt="food image">
             <div class="card-body">
                 <h5 class="card-title text-center"><?php echo $product['food_name'];  ?> </h5>
                 <p class="card-text text-center"><?php echo $product['food_details'];  ?></p>
