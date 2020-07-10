@@ -49,7 +49,7 @@ require_once('dbconfig/config.php');
                     $_SESSION['username'] = $username;
                     $_SESSION['name'] = $row['name'];
                     $_SESSION['user_type'] = "customer";
-                    echo '<script type="text/javascript">alert("Welcome ' . $_SESSION['name'] . ' ")</script>';
+                    // echo '<script type="text/javascript">alert("Welcome ' . $_SESSION['name'] . ' ")</script>';
                     header("Location: index.php");
 
                 } elseif (mysqli_num_rows($query_restaurants_run) > 0) {
